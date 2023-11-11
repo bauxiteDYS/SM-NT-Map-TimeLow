@@ -10,7 +10,7 @@ public Plugin:myinfo =
 	version     = "0.1.0",
 }
 
-public void OnPluginStart()
+public void OnMapStart()
 {
 	CheckedOnce = false;
 }
