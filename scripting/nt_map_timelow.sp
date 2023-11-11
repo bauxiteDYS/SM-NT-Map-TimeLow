@@ -27,7 +27,7 @@ public void OnClientPutInServer(int client)
 		{
 			CheckedOnce = false;
 			PrintToChatAll("Changing map due to low timeleft: %d", timeleft);
-			ServerCommand("changlevel nt_ghost_ctg");
+			ServerCommand("changelevel nt_ghost_ctg");
 		}
 		else
 		{
