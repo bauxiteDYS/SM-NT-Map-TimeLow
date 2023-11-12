@@ -7,7 +7,7 @@ public Plugin:myinfo =
 	name        = "NT Map TimeLow",
 	author      = "bauxite",
 	description = "Used with mp_timelimit, changes map on first client load if not enough time is left",
-	version     = "0.1.0",
+	version     = "0.1.1",
 }
 
 public void OnMapStart()
@@ -23,7 +23,7 @@ public void OnClientPutInServer(int client)
 		int timeleft;
 		GetMapTimeLeft(timeleft);
 
-		if (timeleft < 600)
+		if (timeleft < 2000)
 		{
 			CheckedOnce = false;
 			PrintToChatAll("Changing map due to low timeleft: %d", timeleft);
