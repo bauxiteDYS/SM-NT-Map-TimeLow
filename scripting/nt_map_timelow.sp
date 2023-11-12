@@ -26,7 +26,7 @@ public void OnClientPutInServer(int client)
 		if (timeleft < 2000)
 		{
 			CheckedOnce = false;
-			PrintToChatAll("Changing map due to low timeleft: %d", timeleft);
+			//PrintToChatAll("Changing map due to low timeleft: %d", timeleft);
 			ServerCommand("changelevel nt_ghost_ctg");
 		}
 		else
