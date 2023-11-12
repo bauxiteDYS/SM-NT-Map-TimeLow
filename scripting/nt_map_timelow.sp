@@ -2,13 +2,13 @@
 
 bool CheckedOnce;
 
-public Plugin:myinfo =
+public Plugin myinfo =
 {
 	name        = "NT Map TimeLow",
 	author      = "bauxite",
 	description = "Used with mp_timelimit, changes map on first client load if not enough time is left",
 	version     = "0.1.1",
-}
+};
 
 public void OnMapStart()
 {
